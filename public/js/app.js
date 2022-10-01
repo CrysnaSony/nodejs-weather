@@ -1,6 +1,3 @@
-console.log("client side js")
-
-
 
 const weatherForm=document.querySelector('form')
 const latitude=document.getElementById('latitude')
