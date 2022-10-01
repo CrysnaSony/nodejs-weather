@@ -6,7 +6,7 @@ weatherForm.addEventListener('submit',(e)=>{
     e.preventDefault()
     const lat= latitude.value
     const long= longitude.value
-    fetch('http://localhost:3000/weather?lat='+lat+'&long='+long).then((response)=>{
+    fetch('/weather?lat='+lat+'&long='+long).then((response)=>{
         response.json().then((data)=>{
             console.log(data)
             document.getElementById('message').innerHTML=data.temperature
